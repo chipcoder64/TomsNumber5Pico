@@ -1,0 +1,184 @@
+
+/*header section */
+.main-logo-wrap{
+    width: 100%;
+    background-color: rgb(237, 211, 54);
+    border: dashed 20px #f4b942;
+    border-radius: 25px;
+}
+
+.main-logo{
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.address{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(218, 83, 1);
+}
+
+.phoneNum{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(218, 83, 1);
+    font-weight: 700;
+}
+.phone-link{
+    color: rgb(218, 83, 1);
+    font-weight: 400;
+}
+/* end header section */
+
+
+/* map and hours of operation */
+.map-hoursOfOp-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mjr-cr-cards{
+    margin-top: 20px;
+    width: 200px;
+}
+
+strong{
+    font-size: 1.3em;
+    color: orange;
+}
+
+.hours{
+    font-size: 1.3em;
+    color: midnightblue;
+    margin-left: 10px;
+}
+
+ul li{
+    border-right: 1px solid gainsboro;
+    margin-right: 10px;
+}
+
+/* End of Map and hours of op */
+
+/*breakfast section */
+.food-banner{
+    background-color: rgb(237, 211, 54);
+    padding: 15px 0 15px 30px;
+    font-size: 1.8em;
+    color: rgb(218, 83, 1);
+    font-weight: 800;
+}
+
+.specials-wrap{
+    width: 95%;
+    margin: 20px auto;
+}
+
+.specials{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: midnightblue;
+    margin-top: 20px;
+}
+
+.foodWrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0 20px 0;
+}
+.foodImg{
+    width: 150px;
+    margin-left: 30px;
+}
+.foodLabel{
+    color: midnightblue;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+.price{
+    color: #f4b942;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 30px 0 auto;
+}
+
+.to-top{
+    position: absolute;
+    left: 80%;
+    font-size: .8em;
+    color: midnightblue;
+}
+
+.price-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.grid-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: midnightblue;
+    text-align: center;
+    margin: 20px;
+}
+
+.drink-name{
+    color: #b648fa;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.drink-detail{
+    color: midnightblue;
+    font-size: .6em;
+    font-weight: 300;
+    border-bottom: 1px solid grey;
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    margin: 30px;
+}
+
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .map-hoursOfOp-wrap{
+        flex-direction: column;
+    }
+
+    .to-top{
+        font-size: .6em;
+    }
+
+    .foodLabel{
+        font-size: 1em;
+    }
+
+    .price{
+        font-size: .9em;
+        white-space: nowrap;
+    }
+
+    .foodImg{
+        width: 125px;
+    }
+
+    .drink-name{
+        white-space: nowrap;
+        font-size: 1.3em;
+    }
+
+    .grid-wrap{
+        grid-template-columns: 1fr;
+    }
+}
