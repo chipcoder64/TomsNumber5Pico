@@ -162,11 +162,23 @@ footer{
 
     .foodLabel{
         font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .foodWrap{
+        border-bottom: #f4b942 2px solid;
+
     }
 
     .price{
         font-size: .9em;
         white-space: nowrap;
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .price-wrap{
+        order: -1;
     }
 
     .foodImg{
@@ -180,5 +192,9 @@ footer{
 
     .grid-wrap{
         grid-template-columns: 1fr;
+    }
+    .foodWrap{
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }
